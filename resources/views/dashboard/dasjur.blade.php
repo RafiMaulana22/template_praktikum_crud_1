@@ -2,8 +2,15 @@
 
 @section('content')
 
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
+    </ol>
+</nav>
+
 <div class="alert alert-primary">
-    Selamat Datang Di Halaman Dashboard
+    Selamat Datang Di Halaman Dashboard Jurusan {{ $welcome }}
 </div>
 
 <div class="row mt-3">
@@ -12,7 +19,7 @@
             <li class="list-group-item d-flex justify-content-between align-items-start bg-primary">
                 <div class="ms-2 me-auto">
                     <div class="text-white">
-                        <a href="/jurusan" class="text-white"><i class='bx bxs-dashboard'></i> Data Jurusan</a>
+                        <a href="/jurusan" class="text-white"><i class='bx bxs-institution' ></i> Data Jurusan</a>
                     </div>
                 </div>
                 <span class="badge bg-primary rounded-pill">3</span>
@@ -23,7 +30,7 @@
             <div class="col-md-4 mt-3">
                 <div class="card text-bg-light">
                     <div class="card-header text-center bg-primary text-white">
-                        Sistem Informasi
+                        <a href="/jurdat" class="text-white">Sistem Informasi</a>
                     </div>
                     <div class="card-body text-center">
                         <h5 class="card-title mt-3"><b>0</b></h5>

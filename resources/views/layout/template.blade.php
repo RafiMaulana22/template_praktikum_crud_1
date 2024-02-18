@@ -64,6 +64,50 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/jurusan">Data Jurusan</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/fakultas">Data Fakultas</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                            <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                <div class="avatar avatar-online">
+                                    <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                </div>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0 me-3">
+                                                <div class="avatar avatar-online">
+                                                    <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                                </div>
+                                            </div>
+
+                                            <div class="flex-grow-1">
+                                                <span class="fw-semibold d-block">John Doe</span>
+                                                <small class="text-muted">Admin</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/">
+                                        <i class="bx bx-power-off me-2"></i>
+                                        <span class="align-middle">Log Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/ User -->
                     </ul>
                 </div>
             </div>
@@ -74,6 +118,28 @@
             @yield('content')
 
         </div>
+
+        <footer class="footer bg-light mt-5">
+            <div
+                class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3"
+            >
+                <div>
+                    <a
+                        href="#"
+                        target="_blank"
+                        class="footer-text fw-bolder"
+                    >CRUD Praktikum</a
+                    >
+                        ©
+                </div>
+                <div>
+                    <a href="#" class="footer-link me-4" target="_blank">License</a>
+                    <a href="#" class="footer-link me-4">Help</a>
+                    <a href="#" class="footer-link me-4">Contact</a>
+                    <a href="#" class="footer-link">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </footer>
 
         <script src="{{ asset('') }}assets/vendor/libs/jquery/jquery.js"></script>
         <script src="{{ asset('') }}assets/vendor/libs/popper/popper.js"></script>

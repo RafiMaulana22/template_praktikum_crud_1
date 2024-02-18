@@ -13,6 +13,13 @@ class JurusanController extends Controller
         return view('jurusan.jurusan', $data);
     }
 
+    public function indjurdat()
+    {
+        $data['title'] = 'Data Jurusan Informatika';
+
+        return view('jurusan.jurdat', $data);
+    }
+
     public function tambah()
     {
         $data['title'] = 'Tambah Jurusan';
